@@ -9,7 +9,25 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+/* typo */
+h1 {
+    font-size: 50px;
+}
 
+li {
+    font-size: 13px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.fa-arrow-down-long {
+    font-size: 14px;
+    margin-right: 6px;
+    font-weight: bold;
+}
 /* div conteiners */
 
 .ext-container {
@@ -22,28 +40,46 @@ body {
     margin: auto;
 }
 
-.int-container {
+.int-container, .hero-text {
     max-width: 1500px;
     margin: auto;
 }
 
 /* buttons */
 
-.login {
-  font-family: 'Roboto', sans-serif;
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 7px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 40px;
+.button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
 }
+
+.login {
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.mac-download {
+    background-color: white;
+    color: black;
+    padding: 10px 17px;
+    font-size: 18px;
+}
+
+.browser-open {
+    background-color: black;
+    color: white;
+    padding: 10px 17px;
+    font-size: 18px;
+}
+
 
 .clearfix::after {
     content: "";
@@ -60,6 +96,17 @@ body {
     line-height: 2;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 0px 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
 .col-logo, .col-button {
     float: left;
     width: 25%;
@@ -70,14 +117,17 @@ body {
     float: left;
 }
 
-a {
-    text-decoration: none;
+
+.hero-text {
+    text-align: center;
     color: white;
-    font-weight: 500;
-    padding: 0px 30px;
+    padding: 100px 370px 30px 370px;
 }
 
-nav ul li {
-    display: inline-block;
+.hero-title {
+    margin-bottom: 35px;
 }
 
+.hero-buttons {
+    text-align: center;
+}
