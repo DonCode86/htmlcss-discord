@@ -1,88 +1,19 @@
-/* reset */
+    /* RESET */
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* typo */
-
-h1 {
-    font-size: 50px;
-}
-
-li {
-    font-size: 13px;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.fa-arrow-down-long {
-    font-size: 14px;
-    margin-right: 6px;
-    font-weight: bold;
-}
-
-/* div conteiners */
-
-.ext-container {
-    background-image: url('../img/jumbo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 1920px;
-    height: 550px;
-    background-color: black;
+.container {
+    max-width: 1180px;
     margin: auto;
 }
-
-.int-container, .hero-text {
-    max-width: 1500px;
+.container-small {
+    max-width: 780px;
     margin: auto;
 }
-
-/* buttons */
-
-.button {
-    font-family: 'Roboto', sans-serif;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 40px;
-}
-
-.login {
-  background-color: white;
-  color: black;
-  padding: 6px 10px;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.mac-download {
-    background-color: white;
-    color: black;
-    padding: 10px 17px;
-    font-size: 18px;
-}
-
-.browser-open {
-    background-color: black;
-    color: white;
-    padding: 10px 17px;
-    font-size: 18px;
-}
-
 
 .clearfix::after {
     content: "";
@@ -90,47 +21,119 @@ h2 {
     clear: both;
 }
 
-/* nav menu header */
+    /* TYPO */
 
-.navigation-row {
-    padding-top: 50px;
-    margin: auto;
-    text-align: center;
-    line-height: 2;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    padding: 0px 20px;
+/* Buttons */
+
+.btn {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
 }
 
-nav ul li {
+.btn.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+.btn.btn-violette {
+    background-color: #8ea1e1;
+    color: #fff;
+}
+
+.btn.btn-large {
+    padding: 12px 20px;
+}
+
+/* header */
+
+header {
+    background-color: #255EE8;
+}
+
+.header-top {
+    padding: 10px 0;
+    font-size: 0;
+}
+
+.logo, .main-nav, .login {
     display: inline-block;
+    vertical-align: middle;
 }
 
-.col-logo, .col-button {
-    float: left;
-    width: 25%;
+.logo, .login {
+    width: 15%;
+}
+.login {
+    text-align: right;
 }
 
-.col-links {
-    width: 50%;
-    float: left;
-}
-
-
-.hero-text {
+.main-nav {
+    width: 70%;
     text-align: center;
-    color: white;
-    padding: 100px 350px 30px 350px;
+    font-size: 16px;
+}
+.main-nav ul li {
+    display: inline-block;
+    padding: 0 10px;
 }
 
-.hero-title {
-    margin-bottom: 35px;
+.header-hero {
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
 }
 
-.hero-buttons {
+    /* MAIN */
+
+section {
+    padding: 75px 0;
+}
+
+section h3 {
+    background-image: url(../img/stars.svg);
+    font-size: 24px;
+    display: inline-block;
+    padding: 16px 40px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+.section-bg-gray {
+    background-color: #f6f6f6;
+}
+.section-bg-gray h2 {
+    color: pink;
+}
+
+.section-text-center {
     text-align: center;
+}
+
+.col-text, .col-img {
+    float: left;
+}
+
+.col-img {
+    width: 70%;
+}
+.col-text {
+    width: 30%;
+    padding: 40px 0;
+}
+
+.col-img-right {
+    text-align: right;
 }
